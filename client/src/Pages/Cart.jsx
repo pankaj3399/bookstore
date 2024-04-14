@@ -31,7 +31,7 @@ export default function Cart({ cart, setCart }) {
   const getTotal = () => {
     let total = 0;
     cart.forEach((c) => (total += c.cost));
-    return total;
+    return total.toFixed(2);
   };
   return (
     <Box
