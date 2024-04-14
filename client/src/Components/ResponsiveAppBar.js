@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Badge } from "@mui/material";
 
-const pages = ["dashboard", "cart"];
+const pages = ["dashboard", "cart", "signin"];
 const settings = ["Profile"];
 
 function ResponsiveAppBar({ cart }) {

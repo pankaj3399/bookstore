@@ -8,6 +8,8 @@ import {
   TableBody,
   Paper,
   TablePagination,
+  Box,
+  Button,
 } from "@mui/material";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
@@ -108,6 +110,11 @@ const SalesTracking = () => {
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
+      <Box sx={{ textAlign: "center", mt: 2 }}>
+        <Button variant="contained" onClick={() => navigate("/admin/books")}>
+          Visit Inventory
+        </Button>
+      </Box>
     </div>
   );
 };
